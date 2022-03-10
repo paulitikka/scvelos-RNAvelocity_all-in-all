@@ -1,7 +1,6 @@
-#Epithelial Analysis, Pauli Tikka To 10.3.22
-#%% Just trying to get the etota as adata, for that the basic data is:
+#Epithelial (or any subset adata) RNAvelocity Analysis, Pauli Tikka To 10.3.22
 
-#Let's try to convet Seurat integrated epithelia to alevin. Firs I need either fastqs or bams.. fastq is the last so that'll do
+#Let's try to convert Seurat integrated epithelia to alevin. Firs I need either fastqs or bams.. fastq is the last so that'll do
 #You need to have all the basic generic non-specific alevin stages driven such as:
 setwd(dir='D:/Data for Seurat Analysis/filtered_gene_bc_matrices/Data Filtered and Processed in Seurat')
 # https://satijalab.org/seurat/articles/interaction_vignette.html
@@ -26,7 +25,7 @@ library(BiocManager);library(usethis);library(devtools);library(leidenbase);libr
 gc(); memory.limit(9999999999999) # https://community.rstudio.com/t/how-to-view-edit-code-of-functions-in-rstudio/10384/2
 #%% Select the Sox2+; https://satijalab.org/seurat/articles/essential_commands.html #https://github.com/satijalab/seurat/issues/349
 
-#For me the spliced and unspliced factors were hardest to get:
+#For me the spliced and unspliced factors were the hardest to get:
 #Step 1 in ubuntu:
 # wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M24/gencode.vM24.annotation.gtf.gz
 # wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M24/GRCm38.primary_assembly.genome.fa.gz
